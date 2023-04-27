@@ -348,7 +348,12 @@ section{
 .hp:hover{
     background: #050505;
 }
-
+#look
+{
+   font-size: 2rem;
+   font-weight: 700;
+   font-style: italic;
+}
 /* responsive */
 @media only screen and (min-width: 320px) and (max-width: 991px) {
     .main{
