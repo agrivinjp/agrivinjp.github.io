@@ -36,7 +36,7 @@ const typed = new Typed('.multiple-text', {
     loop:true
 });
 
-/*===== KriIM PESAN ==*/
+/*===== KRIIM PESAN ==*/
 function kirim(){
 
     var id_nama = document.getElementById("nama").value;
@@ -52,6 +52,7 @@ var url = "https://wa.me/6281310000893?text="
 
 window.open(url,'_blank').focus();
   }
+
 
   /* ==== DISABLE KLIK KANAN =====*/
 
