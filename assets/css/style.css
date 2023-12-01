@@ -264,6 +264,34 @@ body.active { overflow: hidden; }
   filter: grayscale(100%);
 }
 
+@media (max-width: 400px)
+
+{
+  #timeline
+  {
+
+  flex-direction: column; /* Mengatur tata letak menjadi kolom */
+
+  }
+  #timeline:hover .tl-item {
+    width: 44vh;
+  }
+  .tl-item {
+  width: 44vh;
+  }
+  .tl-item:before, .tl-item:after {
+    left: 0;
+    top: 0;;
+    }
+    .tl-item:hover {
+      width: 44vh !important;
+    }
+    .tl-bg {
+      background-size: 60vh;
+      background-repeat: no-repeat;
+    }
+
+}
 /*-----------------------------------*\
  * #REUSED STYLE
 \*-----------------------------------*/
