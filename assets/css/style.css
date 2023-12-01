@@ -285,7 +285,7 @@ body.active { overflow: hidden; }
       width: fit-content !important;
     }
     .tl-bg {
-      background-size: fit-content;
+      background-size: 80vh;
       background-repeat: no-repeat;
     }
     .tl-content {
@@ -314,7 +314,7 @@ body.active { overflow: hidden; }
       width: fit-content !important;
     }
     .tl-bg {
-      background-size: fit-content;
+      background-size: 80vh;
       background-repeat: no-repeat;
     }
     .tl-content {
@@ -343,7 +343,7 @@ body.active { overflow: hidden; }
       width: fit-content !important;
     }
     .tl-bg {
-      background-size: fit-content;
+      background-size: 80vh;
       background-repeat: no-repeat;
     }
     .tl-content {
@@ -372,7 +372,7 @@ body.active { overflow: hidden; }
       width: fit-content !important;
     }
     .tl-bg {
-      background-size: fit-content;
+     background-size: 80vh;
       background-repeat: no-repeat;
     }
     .tl-content {
