@@ -1067,6 +1067,16 @@ textarea.input-field {
   height: 450px;
   border-radius: 6px;
 }
+@media (max-width: 600px) {
+.maps {
+  width: 310px;
+}
+}
+@media (max-width: 800px) {
+  .maps {
+    width: 350px;
+  }
+  }
 
 
 /*-----------------------------------*\
