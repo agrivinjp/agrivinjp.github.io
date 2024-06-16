@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrivin - personal portfolio</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0/css/select2.min.css">
+  </head>
+
+<body id="top" class="dark_theme">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="h1 logo">
+        <a href="#">Agrivin<span>.</span></a>
+      </h1>
+
+      <div class="navbar-actions">
+        <select name="language" id="lang" onchange="redirectToPage(this.value)">
+          <option value="en">EN</option>
+          <option value="id">ID</option>
+        </select>
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link">Home.</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">About Me</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link">Skills.</a>
+          </li>
+          <li>
+            <a href="#timeline" class="navbar-link">Experience.</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="navbar-link">Portfolio.</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Contact.</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article class="container">
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+
+        <figure class="hero-banner">
+
+          <picture>
+            <source srcset="./assets/images/hero-banner.png" media="(min-width: 768px)">
+            <source srcset="./assets/images/hero-banner-md.png" media="(min-width: 500px)">
+            <img src="./assets/images/hero-banner-sm.png" alt="" class="w-100">
+          </picture>
+
+        </figure>
+
+        <div class="hero-content">
+
+          <h2 class="h2 hero-title">Agrivin Jonathan Putra</h2>
+
+          <a href="#contact" class="btn btn-primary">Contact Me</a>
+
+        </div>
+
+        <ul class="hero-social-list">
+
+          <li>
+            <a href="mailto:kontak@agrivinjp.my.id" class="hero-social-link">
+              <ion-icon name="mail"></ion-icon>
+
+              <div class="tooltip">Email</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://wa.me/6281310000893" class="hero-social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+
+              <div class="tooltip">Whatsapp</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://id.linkedin.com/in/agrivinjp" class="hero-social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+
+              <div class="tooltip">Linkedin</div>
+            </a>
+          </li>
+
+        </ul>
+
+        <a href="#stats" class="scroll-down">Scroll</a>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #STATS
+      -->
+
+      <section class="stats" id="stats">
+        <ul class="stats-list">
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-1.png" alt="">
+              </div>
+
+              <h2 class="h2 card-title">
+                4 <strong>Work Experience</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-2.png" alt="">
+              </div>
+
+              <h2 class="h2 card-title">
+                5+ <strong>Completed Project</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="stats-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-3.png" alt="">
+              </div>
+
+              <h2 class="h2 card-title">
+                2 <strong>Professional Certification</strong>
+              </h2>
+
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+            </a>
+          </li>
+
+        </ul>
+      </section>
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+
+        <figure class="about-banner">
+          <img src="./assets/images/about-banner.png" alt="A man in a alice blue shirt with a thinking expression"
+            class="w-100">
+        </figure>
+
+        <div class="about-content section-content">
+
+          <p class="section-subtitle">About Me</p>
+
+          <h2 class="h3 section-title">Do you need someone experienced? I can help!</h2>
+
+          <p class="section-text">
+            I am a professional IT with over three years of experience in network installation and one year in IT support. I possess strong knowledge of ticketing systems, proficiency in operating Microsoft Azure and AWS cloud platforms, and skills in configuring and repairing internet and computer network equipment.
+          </p>
+
+          <div class="btn-group">
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            <a href="#" class="btn btn-primary">Download CV</a>
+          </div>
+
+        </div>
+
+      </section>
+
+<!-- - #ABOUT -->
+      <section class="timeline" id="timeline">
+        <div class="tl-item">
+          <div class="tl-bg" style="background-image: url(assets/images/fn.png)"></div>
+          <p class="section-subtitle">Work Experience</p>
+          <div class="tl-year">
+            <p class="f2 heading--sanSerif">2018 - 2021</p>
+          </div>
+      
+          <div class="tl-content">
+            <h1>PT. FIBER NETWORK INDONESIA</h1>
+            <p>
+              In this role, I played a key part in ensuring the smooth operation of the company's systems. My primary responsibilities included setting up devices for client internet needs, designing and implementing internet networks according to client requirements, as well as managing the maintenance of the company's Base Transceiver Station (BTS).
+
+              I was also responsible for comprehensive documentation related to the installation and design of the company's network infrastructure. Within the framework of cross-departmental collaboration, I actively supported internal functions of the company's management</p>          </div>
+      
+        </div>
+      
+        <div class="tl-item">
+          
+          <div class="tl-bg" style="background-image: url(assets/images/nd.png)"></div>
+          <p class="section-subtitle">Work Experience</p>
+          <div class="tl-year">
+            <p class="f2 heading--sanSerif">2021 - 2022</p>
+          </div>
+      
+          <div class="tl-content">
+            <h1 class="f3 text--accent ttu">PT. NAWADATA SOLUTIONS</h1>
+            <p>In this role, I am responsible for ensuring the smooth operation of the company's systems. My responsibilities include server maintenance, setting up computer devices for new employees, addressing employee workstation complaints through the ticketing system, ensuring optimal availability and performance of the internet, and conducting backups of the company's database. I also collaborate with other departments to support internal functions of the company's management.
+
+              Furthermore, I am involved with other departments in the development and improvement of the company's cloud systems to enhance efficiency over time.</p>
+          </div>
+      
+        </div>
+      
+        <div class="tl-item">
+          
+          <div class="tl-bg" style="background-image: url(assets/images/yf.png)"></div>
+          <p class="section-subtitle">Work Experience</p>
+          <div class="tl-year">
+            <p class="f2 heading--sanSerif">2023 - Currently</p>
+          </div>
+      
+          <div class="tl-content">
+            <h1 class="f3 text--accent ttu">PT. YIFANG CARGO MUTIARA ELEKTRONIK 2</h1>
+            <p>In this role, I manage and resolve company network issues, perform repairs and installations of CCTV throughout the company's premises, and address problems while conducting IT device installations. I am also responsible for coordinating between departments regarding internet issues and IT devices within the company.
+
+              Additionally, I am involved in creating asset websites for inventory purposes, and I consistently conduct checks to ensure the company's technological systems and infrastructure operate smoothly, supporting operational efficiency and meeting the internal and external needs of the company.
+              
+              </p>
+          </div>
+      
+        </div>
+      
+        </div>
+      </section>
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="skills" id="skills">
+
+        <div class="skills-content section-content">
+
+          <p class="section-subtitle">Skill & Tools</p>
+
+          <h2 class="h3 section-title">What can I do?</h2>
+
+          <p class="section-text">
+            The icon next to it represents the skills I possess and some tools that I frequently use in my work.
+          </p>
+
+          <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+
+            <button class="toggle-btn" data-toggle-btn>Tools</button>
+          </div>
+
+        </div>
+
+        <div class="skills-box" data-skills-box>
+
+          <ul class="skills-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">HTML5</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/html5.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">CSS3</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/css3.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Mikrotik</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/javascript.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Microsoft Office</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/typescript.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Microdoft Office 365</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/365.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Amazon Web Service</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/aws.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Microsoft Azure</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/azure.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Windows Server</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/ws.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">PC Repair</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/pc.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Network Maintenance</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/nw.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Hyper-V</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/Hyper-V.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">OS Installation</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/ins.png" alt="">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <ul class="tools-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Winbox</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/winbox.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">MS Word</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/word.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">MS Excel</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/excel.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">WPS</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/wps.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Snipe IT</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/sn.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Command Line</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/command.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">VS Code</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/vs-code.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">MRTG</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/mrtg.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Sublime Text</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/sb.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Grafana</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/gf.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Photoshop</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/photoshop.png" alt="">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">The Dude</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/dude.png" alt="">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROJECTS
+      -->
+
+      <section class="project" id="portfolio">
+
+        <ul class="project-list">
+
+          <li>
+            <div class="project-content section-content">
+
+              <p class="section-subtitle">Project</p>
+
+              <h2 class="h3 section-title">Several projects that I have worked on</h2>
+
+              <p class="section-text">
+                I have managed several projects, ranging from access point installations, CCTV installations, implementation of internet networks, to the development of asset websites to meet the needs of both the company and clients in the projects I handle..
+            </div>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-1.png" class="w-100" alt="">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Installation CCTV PT. Yifang</h3>
+
+                <time class="publish-date" datetime="2022-04">September 2023</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-2.png" class="w-100" alt="">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Network Installation PN Serang</h3>
+
+                <time class="publish-date" datetime="2022-04">June 2020</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-3.png" class="w-100" alt="">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Network Installation Ruang Guru Sby</h3>
+
+                <time class="publish-date" datetime="2022-04">July 2019</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-4.png" class="w-100" alt="">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Wireless Installation PA Pandeglang</h3>
+
+                <time class="publish-date" datetime="2022-04">September 2021</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-62.png" class="w-100" alt="">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Creation Of The Asset Website</h3>
+
+                <time class="publish-date" datetime="2022-04">November 2023</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-6.png" class="w-100" alt="">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Installation BTS Stikes PT.Fibernet</h3>
+
+                <time class="publish-date" datetime="2022-04">March 2020</time>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="project-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/project-7.png" class="w-100" alt="">
+              </figure>
+
+              <div class="card-content">
+                <h3 class="h4 card-title">Installation WiFi Royal Path Academy</h3>
+
+                <time class="publish-date" datetime="2022-04">August 2022</time>
+              </div>
+
+            </a>
+          </li>
+        </ul>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="contact" id="contact">
+
+        <div class="contact-content section-content">
+
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h3 section-title">Are you interested in recruiting me?</h2>
+
+          <p class="section-text">
+            Let me know if you are interested in hiring me, fill out the form in the provided column, and I assure you, I will respond as soon as possible.
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Address :</h3>
+
+                <address class="contact-info">
+                  Kragilan, Kabupaten Serang
+                </address>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Phone :</h3>
+
+                <a href="tel:081310000893" class="contact-info">(62) 813 1000 0893</a>
+
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email :</h3>
+
+                <a href="mailto:info@jack.com" class="contact-info">kontak@agrivinjp.my.id</a>
+              </div>
+
+              <li class="contact-list-item">
+
+                <div class="contact-item-icon">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                </div>
+  
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Whatsapp :</h3>
+  
+                  <a href="https://wa.me/6281310000893" class="contact-info">0813 10000 893</a>
+                </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <form action="" class="contact-form">
+          <h3 class="h4 contact-item-title">Google Maps :</h3>
+          <iframe class ="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126942.72568038366!2d106.1850868512829!3d-6.1360530125798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e41f613b0d70579%3A0xa080aec95ed517c6!2sKragilan%2C%20Serang%20Regency%2C%20Banten!5e0!3m2!1sen!2sid!4v1701182781732!5m2!1sen!2sid"></iframe>
+        </form>
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="h1 logo">
+        <a href="#">
+          Agrivin<span>.</span>
+        </a>
+      </p>
+
+      <p class="copyright">
+        &copy;<script>document.write(new Date().getFullYear())</script> <a href="#">Agrivin Jonathan Putra</a>. Edited
+      </p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
