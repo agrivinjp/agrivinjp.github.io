@@ -117,7 +117,7 @@ if (selectedValue === "id") {
   window.location.href = "index.html";
 } else if (selectedValue === "en") {
   // Jika yang dipilih adalah "en", arahkan ke index2.html
-  window.location.href = "index2.html";
+  window.location.href = "en.html";
 } else {
   // Jika tidak ada yang cocok, tambahkan logika tambahan atau penanganan kesalahan
   console.log("Invalid selection");
